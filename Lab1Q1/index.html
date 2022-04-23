@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+
+	<style type="text/css">
+		form{
+			border:2px solid #000;
+			width: 300px;
+			margin-left: 610px; 
+			text-align: center;
+			height: 380px; 
+		}
+		h1{
+			text-align: center;
+		}
+		input, label, select, textarea{
+			margin-top: 30px;
+		}
+		#result-btn{
+			width: 150px;
+			height: 30px;
+		}
+	</style>
+
+</head>
+<body>
+
+    <h1>Calculator</h1>
+
+	<form>
+        <input type="text" name="first-number" id="first-number" placeholder="First Number" ><br>
+		<input type="text" name="second-number" id="second-number" placeholder="Second Number"><br>
+		<label for="operation">Operation</label>
+		<select name="operation" id="operation">
+			<option value="add">+</option>
+			<option value="substract">-</option>
+			<option value="multiply">*</option>
+			<option value="divide">/</option>
+		</select><br>
+		<input type="button" name="result-btn" id="result-btn" onclick="displayResult()" value="Result"><br>
+		<textarea id="result-field" placeholder="Check result here..."></textarea>
+	</form>
+	
+
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

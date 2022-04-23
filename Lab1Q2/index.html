@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signup form</title>
+</head>
+<body>
+	<h1>Signup Form</h1>
+	<form >
+		<label for="user-name">User name:</label><br>
+		<input type="text" name="user-name" id="u_name" placeholder="atleast 3 characters">
+		<label for="user-name" id="u_lbl" style="color: red;visibility: hidden;"><small>Invalid username</small></label><br><br>
+
+		<label for="email_Id">Email:</label><br>
+		<input type="text" name="email_Id" id="email_Id" placeholder="test@examble.com">
+		<label for="email_Id" id="email_lbl" style="color: red; visibility: hidden;"><small>Invalid email id</small></label><br><br>
+
+		<label for="phone_number">Mobile NO.:</label><br>
+		<input type="text" name="phone_number" id="p_num" placeholder="10 digit number">
+		<label for="phone_number" id="p_lbl" style="color: red; visibility: hidden;"><small>Invalid mobile number</small></label><br><br>
+
+		<label for="password1">Password:</label><br>
+		<input type="password" name="password1" id="pwd" placeholder="atleast 6 characters">
+		<label for="password1" id="pwd_lbl"  style=" color: red; visibility: hidden;"><small>Invalid passsword</small></label><br><br>
+
+		<button type="button" name="submit-btn" id="btn" onclick="validate()">Submit</button>
+
+	</form>
+
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
